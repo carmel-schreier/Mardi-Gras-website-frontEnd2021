@@ -1,0 +1,62 @@
+.navbar {
+    margin: 1.5em;
+}
+
+.nav-link {
+    color: $mg-violet !important;
+    font-size: 20px;
+    font-weight: bold;
+
+    @include respond(tablet) {
+        color: $mg-green !important;
+        font-size: 17px;
+    }
+
+    @include respond(mobile) {
+        color: $mg-yellow !important;
+        font-size: 15px;
+    }
+
+
+}
+
+.active {
+    color: $mg-yellow !important;
+
+    @include respond(mobile) {
+        color: $mg-violet !important;
+
+    }
+}
+
+.nav-link:hover {
+    color: $mg-yellow !important;
+
+    @include respond(mobile) {
+        color: $mg-violet !important;
+
+    }
+}
+
+.nav-item {
+    padding: 0.5vw;
+}
+
+.navbar-toggler-icon {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+
+.nav-logo {
+    height: 4em !important;
+    width: 10em !important;
+    object-fit: contain !important;
+    transition: 0.3s //height: 100px !important;
+        // width: 120px !important;
+}
+
+.navbar-brand:hover {
+    transform: scale(1.1) rotate(7deg);
+    //transition: transform 0.5s linear;
+}

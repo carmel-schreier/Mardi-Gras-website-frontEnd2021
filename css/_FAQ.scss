@@ -1,0 +1,205 @@
+.FAQ-section {
+    margin-bottom: 30px;
+}
+
+img.FQA-img {
+
+    width: 100%;
+
+    @include respond(mobile) {
+        margin-bottom: -1em !important;
+        margin-top: -1em;
+
+    }
+}
+
+.btn.btn-primary {
+    color: $mg-violet !important;
+    border: 2px solid $mg-violet !important;
+    background-color: $mg-light !important;
+    padding: 10px !important;
+    // margin: 10px 0;
+    border-radius: 20px !important;
+    //margin-bottom: 30px;
+
+
+}
+
+p.guide-text {
+    color: $mg-green;
+    font-size: 1.1em;
+    margin-top: 2vw !important;
+    line-height: 1.9 !important;
+
+
+
+}
+
+h5.guide-text {
+    margin-top: 2vw !important;
+    font-size: 1.3em;
+    color: $mg-green;
+    font-weight: bold;
+
+    @include respond(mobile) {
+        margin-top: 2em !important;
+
+    }
+}
+
+.border.guide-text {
+    height: 4px;
+    width: 80%;
+    background-color: $mg-green;
+}
+
+.btn-FAQ {
+    padding: 0.6rem 1.3rem !important;
+    background-color: $mg-green !important;
+    border: 2px solid $mg-green !important;
+    font-size: 1.2em !important;
+    color: $mg-light !important;
+    line-height: 1 !important;
+    border-radius: 25px !important;
+    outline: none !important;
+    cursor: pointer !important;
+    transition: 0.3s !important;
+    margin-bottom: 1.6vw !important;
+    margin-top: 1.2vw !important;
+
+    @include respond(mobile) {
+        margin-bottom: 4em !important;
+
+    }
+
+}
+
+.btn-FAQ:hover {
+    background-color: $mg-light !important;
+    color: $mg-green !important;
+}
+
+h2.headline {
+    color: $mg-green;
+    font-family: "Poppins" !important;
+    //padding-bottom: 20px;
+    font-weight: bold;
+    // margin-top: -1px !important;
+    text-transform: uppercase;
+
+    font-size: 1.3em;
+    line-height: 1.2em;
+
+
+
+}
+
+
+//---------------Accordion part
+.accordion-item {
+    font-size: 15px;
+    border: 1px solid $mg-violet !important;
+
+    h2 {
+        button {
+            display: block;
+            text-align: left;
+            text-decoration: none;
+            //color: $mg-violet;
+            position: relative;
+            // -webkit-box-shadow: 3 3px 10px -2px rgba(0, 0, 0, 0.2) !important;
+            //box-shadow: 0 10px 10px -2px rgba(0, 0, 0, 0.2) !important;
+            border-radius: 0px !important;
+            border: 0.3px solid $mg-violet !important;
+            background-color: thistle !important;
+
+            .fa {
+                position: absolute;
+                right: 20px;
+                top: 50%;
+                -webkit-transform: translateY(-50%) rotate(-180deg);
+                -ms-transform: translateY(-50%) rotate(-180deg);
+                transform: translateY(-50%) rotate(-180deg);
+                -webkit-transition: .3s all ease;
+                -o-transition: .3s all ease;
+                transition: .3s all ease;
+            }
+
+            p {
+                padding-right: 35px;
+                line-height: 1.5em;
+            }
+        }
+
+        button:hover {
+            text-decoration: none;
+            -webkit-box-shadow: 3 3px 10px -2px rgba(0, 0, 0, 0.2) !important;
+            box-shadow: 0 10px 10px -2px rgba(0, 0, 0, 0.2) !important;
+
+        }
+
+        button.collapsed {
+            color: $mg-violet !important;
+
+            .fa {
+                //position: absolute;
+                right: 43px;
+                top: 50%;
+                -webkit-transform: translateY(-50%);
+                -ms-transform: translateY(-50%);
+                transform: translateY(-50%);
+
+            }
+        }
+
+        button.collapsed:hover {
+            text-decoration: none;
+            -webkit-box-shadow: 3 3px 10px -2px rgba(0, 0, 0, 0.2) !important;
+            box-shadow: 0 10px 10px -2px rgba(0, 0, 0, 0.2) !important;
+
+        }
+    }
+
+    .accordion-body {
+        padding-top: 20px;
+        font-family: "Poppins" !important;
+        background-color: $mg-light !important;
+        color: $mg-violet !important;
+
+    }
+}
+
+.accordion-button:not(.collapsed),
+.accordion-button.show {
+    color: $mg-violet !important;
+    font-weight: bolder !important;
+    //background-color: $mg-light !important;
+    border: none;
+    box-shadow: none !important;
+    font-family: "Poppins" !important;
+
+}
+
+.accordion-button:focus {
+    border: none;
+}
+
+
+.guide-part-2 {
+    @include respond(desktop) {
+        display: none !important;
+    }
+
+    @include respond(tablet) {
+        display: none !important;
+    }
+
+
+}
+
+.guide-part {
+    @include respond(mobile) {
+        display: none !important;
+    }
+
+}

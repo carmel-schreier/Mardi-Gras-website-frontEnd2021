@@ -1,0 +1,177 @@
+.about-body {
+    //min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $mg-light;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    .about-section {
+        margin-top: -15px;
+        background: url("street-parade.webp") no-repeat left;
+        background-size: 76.5%;
+        //object-fit: contain;
+        background-color: $mg-yellow;
+        overflow: hidden;
+        padding: 100px 0;
+        //display: flex;
+        //flex-direction: column;
+    }
+
+    .inner-about-container {
+        width: 55%;
+        float: right;
+        background-color: $mg-light;
+        padding: 50px;
+
+        h1 {
+            margin-bottom: 30px;
+            font-size: 30px;
+            font-weight: bold;
+            color: $mg-violet;
+        }
+
+        .border {
+            height: 4px;
+            width: 360px;
+            background-color: $mg-violet;
+        }
+
+        .about-text {
+            font-size: 14px;
+            color: $mg-violet;
+            line-height: 21px;
+            text-align: justify;
+            margin-bottom: 40px;
+        }
+
+        .about-btn {
+            border: none;
+            padding: 8px 15px;
+            background-color: $mg-violet;
+            color: $mg-light;
+            transition: 0.3s;
+        }
+
+        .about-btn:hover {
+            //border: 1px solid $mg-violet;
+            //background: $mg-light;
+            // color: $mg-violet;
+            text-decoration: underline;
+        }
+
+        img {
+            float: right;
+            margin-left: 30px;
+        }
+    }
+
+
+    @media screen and (max-width:1200px) {
+        .inner-about-container {
+            padding: 80px;
+        }
+    }
+
+
+    @media screen and (max-width:1000px) {
+        .about-section {
+            background-size: 100%;
+            padding: 100px 40px;
+        }
+
+        .inner-about-container {
+            width: 100%;
+        }
+    }
+
+
+    @media screen and(max-width:600px) {
+        .about-section {
+            padding: 0;
+        }
+
+        .inner-about-container {
+            padding: 20px 60px;
+        }
+    }
+}
+
+.trivia-game-container {
+    position: relative;
+    background-color: $mg-light;
+    padding: 20px 400px 20px 200px;
+
+    .trivia-text {
+        font-size: 20px;
+        font-weight: bold;
+        color: $mg-violet;
+        line-height: 40px;
+        text-align: justify;
+
+        //margin: 0px 200px 0px 200px;
+        @media screen and (max-width:600px) {
+            padding-top: 40px;
+        }
+    }
+
+    .trivia-btn {
+        //position: absolute;
+        //left: 30%;
+        //float: right;
+        border: none;
+        padding: 8px 15px;
+        background-color: $mg-violet;
+        color: $mg-light;
+        transition: 0.3s;
+        margin-bottom: 15px;
+        margin-top: -20px;
+    }
+
+    .trivia-btn:hover {
+        //border: 1px solid $mg-violet;
+        //background: $mg-light;
+        // color: $mg-violet;
+        text-decoration: underline;
+    }
+
+    @media screen and (max-width:1000px) {
+        padding: 50px 100px;
+
+        .trivia-text {
+            font-size: 20px;
+            line-height: 40px;
+            right: 50%;
+
+        }
+    }
+
+
+    @media screen and(max-width:600px) {
+        //padding: 50px 30px;
+
+        padding: 20px 60px;
+
+        .trivia-text {
+            font-size: 15px;
+            line-height: 30px;
+            text-align: justify;
+            margin-top: -40px;
+
+        }
+    }
+}
+
+.about-img-mobile {
+    @media screen and(min-width:600px) {
+        display: none;
+    }
+
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    margin-top: -18px;
+    margin-bottom: 15px;
+}

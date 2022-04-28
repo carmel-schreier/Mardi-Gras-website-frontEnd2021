@@ -1,0 +1,234 @@
+.modal-cards {
+
+    .modal-dialog {
+
+        width: 350px !important;
+        //background-color: sandybrown;
+        border-radius: 30px !important;
+        background-color: $mg-light;
+        color: $mg-dark;
+
+
+        //height: 70% !important;
+
+    }
+
+    .modal-content {
+        //width: 350px !important;
+        //height: 70% !important;
+        // border-radius: 30px !important;
+        // background-color: blue;
+        border-radius: 30px !important;
+        width: 100% !important;
+        // position: relative;
+
+
+        .modal-header {
+
+            border-top-left-radius: 30px !important;
+            border-top-right-radius: 30px !important;
+
+            height: 140px;
+            width: 350px !important;
+
+            background-size: cover !important;
+
+            background-position: left !important; //position: fixed;
+
+
+            .modal-img {
+                width: 350px;
+                height: 140px !important;
+                border-top-left-radius: 30px !important;
+                border-top-right-radius: 30px !important;
+                object-fit: cover !important;
+                position: absolute !important;
+                top: 0 !important;
+                right: 0 !important;
+                left: 0 !important;
+            }
+        }
+
+        //style="background-image:url('images/sponsors/ritz-carlton-out.jpg')" ;
+        .modal-body {
+            height: 400px;
+            //position: relative;
+
+
+
+
+            #ritz-logo {
+                width: 170px !important;
+                height: 80px !important;
+                margin-left: -12px !important;
+                margin-bottom: 10px;
+
+                @include respond(mobile) {
+                    margin-left: 80px !important;
+                }
+
+                @include respond(tablet) {
+                    margin-left: 80px !important;
+                }
+
+            }
+
+            #haunted-logo {
+                width: 170px !important;
+                height: 80px !important;
+                margin-left: -12px !important;
+                margin-bottom: 10px;
+
+                @include respond(mobile) {
+                    margin-left: 80px !important;
+                }
+
+                @include respond(tablet) {
+                    margin-left: 80px !important;
+                }
+            }
+
+            #ace-logo {
+                width: 160px !important;
+                height: 70px !important;
+                margin-left: -12px !important;
+                margin-bottom: 7px;
+
+                @include respond(mobile) {
+                    margin-left: 80px !important;
+                }
+
+                @include respond(tablet) {
+                    margin-left: 80px !important;
+                }
+            }
+
+            #lmc-logo {
+                width: 80px !important;
+                height: 80px !important;
+                //margin-left: -12px !important;
+                //margin-right: -30px !important;
+                margin-bottom: 0px;
+
+                @include respond(mobile) {
+                    margin-left: 120px !important;
+                }
+
+                @include respond(tablet) {
+                    margin-left: 120px !important;
+                }
+
+            }
+
+            #death-logo {
+                width: 250px !important;
+                height: 70px !important;
+                //margin-left: -12px !important;
+                //margin-right: -30px !important;
+                margin-bottom: 7px;
+
+                @include respond(mobile) {
+                    margin-left: 37px !important;
+                }
+
+                @include respond(tablet) {
+                    margin-left: 37px !important;
+                }
+            }
+
+
+
+            #premium-logo {
+                width: 200px !important;
+                height: 80px !important;
+                //margin-left: -12px !important;
+                //margin-right: -30px !important;
+                margin-bottom: 7px;
+
+                @include respond(mobile) {
+                    margin-left: 60px !important;
+                }
+
+                @include respond(tablet) {
+                    margin-left: 60px !important;
+                }
+            }
+
+            #walk-ons-logo {
+                width: 200px !important;
+                height: 80px !important;
+                //margin-left: -12px !important;
+                //margin-right: -30px !important;
+                margin-bottom: 7px;
+
+                @include respond(mobile) {
+                    margin-left: 60px !important;
+                }
+
+                @include respond(tablet) {
+                    margin-left: 60px !important;
+                }
+            }
+
+            #sheraton-logo {
+                width: 180px !important;
+                height: 70px !important;
+                //margin-left: -12px !important;
+                //margin-right: -30px !important;
+                margin-bottom: 7px;
+
+                @include respond(mobile) {
+                    margin-left: 70px !important;
+                }
+
+                @include respond(tablet) {
+                    margin-left: 70px !important;
+                }
+            }
+
+            .map {
+                //position: absolute;
+                width: 100%;
+                height: 140px;
+                //bottom: 0;
+                //right: auto;
+                //left: auto;
+                margin: 0 !important;
+                padding: 0 !important;
+                //position: contain;
+                //border-top: 3px solid red;
+            }
+
+            p {
+                font-size: 14px;
+                padding-top: 10px;
+                padding-bottom: 4px;
+
+
+            }
+
+            h5 {
+                font-size: 14px;
+                padding-top: 7px;
+                padding-bottom: 6px;
+                //font-weight: bold;
+                padding-left: 0;
+                padding-right: 0;
+            }
+
+
+
+        }
+
+        .modal-footer {
+            //background-color: blue;
+            height: 70px;
+            width: 350px !important;
+        }
+
+    }
+}
+
+//style="background-image:url('images\sponsors\ritz-carlton-out_ccexpress.jpg')" ;
+
+//Phone: +1 (504) 524-1331
